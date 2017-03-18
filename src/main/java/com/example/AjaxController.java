@@ -47,9 +47,10 @@ public class AjaxController {
         nameListDTO.setNames(collect);
 
         if (collect.isEmpty()) {
-
+            log.info("brak w bazie");
             nameListDTO.setMessage(new Message("brak"));
         } else {
+            log.info("jest w bazie");
             nameListDTO.setMessage(new Message("jest"));
         }
 
