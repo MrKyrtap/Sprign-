@@ -45,7 +45,9 @@ public class AjaxController {
                 .collect(Collectors.toList());
         NameListDTO nameListDTO = new NameListDTO();
         nameListDTO.setNames(collect);
+
         if (collect.isEmpty()) {
+
             nameListDTO.setMessage(new Message("brak"));
         } else {
             nameListDTO.setMessage(new Message("jest"));
