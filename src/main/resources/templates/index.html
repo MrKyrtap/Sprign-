@@ -13,9 +13,21 @@
 <body>
 <div align="center">
     <p>Type the name</p>
-    <input id="txt" type="text" onkeyup="crunchifyAjax()" autocomplete="off"/>
+    <form action="/ajax/add" method="post">
+
+        <input list="anrede" id="title" name="title" type="text" onkeyup="crunchifyAjax()" autocomplete="off"/>
+
+        <input type="submit" id="bt_submit"/>
+    </form>
     <div id="result"></div>
 </div>
+
+<datalist id="anrede"></datalist>
+
+<script type="text/javascript">
+
+</script>
 </body>
+
 
 </html>

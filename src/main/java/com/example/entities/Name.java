@@ -13,21 +13,28 @@ public class Name {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
-    String name;
+    String title;
 
     public int getId() {
         return id;
+    }
+
+    public Name() {
+    }
+
+    public Name(String title) {
+        this.title = title;
     }
 
     public void setId(int id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 }
